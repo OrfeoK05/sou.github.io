@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      height: 200%;
+      transition: transform 0.5s ease;
+      touch-action: pan-y;
+    }
+
+    .section {
+      flex: 1;
+      overflow-y: scroll;
+      box-sizing: border-box;
+      padding: 20px;
+    }
+
+    #section1 {
+      background-color: #f0f0f0;
+    }
+
+    #section2 {
+      background-color: #e0e0e0;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container" id="container">
+  <div id="section1" class="section">
+    <h1>Section 1</h1>
+    <!-- Content for Section 1 -->
+    <!-- Add your content here -->
+  </div>
+
+  <div id="section2" class="section">
+    <h1>Section 2</h1>
+    <!-- Content for Section 2 -->
+    <!-- Add your content here -->
+  </div>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    let container = document.getElementById('container');
+    let startY;
+
+    container.addEventListener('touchstart', function (e) {
+      startY = e.touches[0].clientY;
+    });
+
+    container.addEventListener('touchmove', function (e) {
+      e.preventDefault();
+      let deltaY = e.touches[0].clientY - startY;
+      container.style.transform = `translateY(calc(-50% + ${deltaY}px))`;
+    });
+
+    container.addEventListener('touchend', function () {
+      container.style.transform = 'translateY(-50%)';
+    });
+  });
+</script>
+
+</body>
+</html>
