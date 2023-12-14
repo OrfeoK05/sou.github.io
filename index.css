@@ -4,6 +4,22 @@ body {
   background-image: linear-gradient(#ba98de, #74dada, #ba98de, #74dada, #ba98de, #74dada, #ba98de, #74dada, #ba98de, #74dada);
 }
 
+.start{
+
+}
+
+.titlefirst {
+
+}
+
+.titlesecond {
+
+}
+
+.titlethird {
+
+}
+
 .von {
   margin-top: 250px;
   margin-bottom: 200px;
@@ -20,6 +36,7 @@ body {
   justify-content: center;
   align-items: center;
   margin: 20px;
+  text-decoration: none;
 }
 
 .scroll-button {
@@ -32,17 +49,35 @@ body {
 }
 
 .firstsection{
-  margin-top: 500px;
+  margin-top: 100vh;
+  background-color: white;
+  border-radius: 25px;
   padding: 20px;
-  background-color: #f0f0f0;
+}
+
+.section {
+  margin-top: 10vh;
+  background-color: white;
+  border-radius: 25px;
+  padding: 20px;
+}
+
+.imgcontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  margin-top: 20px;
+  max-width: 90%;
+  border-radius: 25px;
 }
 
 h1 {
-  text-align: justify;
-  font-size: 70px;
+  font-size: 60px;
   font-family: sans-serif;
-  font-weight: normal;
-  margin-bottom: 10px;
+  font-weight: lighter;
 }
 
 h5 {
