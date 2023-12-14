@@ -1,0 +1,105 @@
+body {
+  margin-left: 20px;
+  margin-right: 20px;
+  background-image: linear-gradient(#ba98de, #74dada, #ba98de, #74dada, #ba98de, #74dada, #ba98de, #74dada, #ba98de, #74dada);
+}
+
+.start{
+
+}
+
+.titlefirst {
+
+}
+
+.titlesecond {
+
+}
+
+.titlethird {
+
+}
+
+.von {
+  margin-top: 250px;
+  margin-bottom: 200px;
+}
+
+.introduction {
+  background-color: white;
+  border-radius: 25px;
+  padding: 20px;
+}
+
+.buttonclass{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  text-decoration: none;
+}
+
+.scroll-button {
+  display: block;
+  padding: 10px;
+  background-color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.firstsection{
+  margin-top: 100vh;
+  background-color: white;
+  border-radius: 25px;
+  padding: 20px;
+}
+
+.section {
+  margin-top: 10vh;
+  background-color: white;
+  border-radius: 25px;
+  padding: 20px;
+}
+
+.imgcontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  margin-top: 20px;
+  max-width: 90%;
+  border-radius: 25px;
+}
+
+h1 {
+  font-size: 60px;
+  font-family: sans-serif;
+  font-weight: lighter;
+}
+
+h5 {
+  text-align: right;
+  font-size: 15px;
+  font-family: sans-serif;
+  font-weight: lighter;
+}
+
+h3, p {
+  margin: 10px 0;
+}
+
+p {
+  text-align: left;
+  font-family: sans-serif;
+  font-size: 16px;
+  letter-spacing: .3px;
+  word-spacing: .5px;
+  line-height: 20px;
+}
+
+
+
+
